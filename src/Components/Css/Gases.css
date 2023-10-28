@@ -1,0 +1,39 @@
+.gasBox {
+    justify-content: space-around;
+    gap: 15px;
+    box-sizing: border-box;
+    transition: all 2s ease;
+    text-align: center;
+    align-items: center;
+}
+
+
+.gases {
+    padding: 5px;
+    width: 150px;
+    height: 100px;
+    font-weight: 400;
+    border-radius: 20px;
+    box-sizing: content-box;
+
+ 
+}
+
+.gases:hover {
+    
+}
+
+.gases sub {
+  
+}
+.gases h3{
+    margin: 0;
+}
+.gases p {
+ margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(247, 113, 18);
+   
+}

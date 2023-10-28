@@ -1,0 +1,10 @@
+.cards {
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    position: relative;
+}
+.cards:hover .toolTips{
+    visibility: visible;
+}
