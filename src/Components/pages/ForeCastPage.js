@@ -10,9 +10,9 @@ const ForeCastPage = () => {
     console.log(place)
     const data = useCurrentInfo(place, 6);
 
-    const currentLocation = data && data.location;
-    const forecastData = data.forecast && data.forecast.forecastday
-    console.log(forecastData)
+    const currentLocation =  data.location;
+    const forecastData = data.forecast&&data.forecast.forecastday
+
     if (data === "invalidSearch") {
      
         return <ApiErrorResponse />;
