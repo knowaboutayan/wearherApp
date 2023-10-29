@@ -24,7 +24,6 @@ const ForeCastPage = () => {
      
         // If data is valid, update local storage with the place name and render the content
         localStorage.clear();
-        console.log(place)
         localStorage.setItem('placename', currentLocation && currentLocation.name);
         return (
 
