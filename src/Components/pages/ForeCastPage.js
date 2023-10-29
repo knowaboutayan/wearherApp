@@ -8,7 +8,7 @@ import useCurrentInfo from "../../Hook/useCurrentInfo";
 const ForeCastPage = () => {
     const place = useSelector(state => state.placename)
     console.log(place)
-    const data = useCurrentInfo(place, 3);
+    const data = useCurrentInfo(place, 6);
 
     const currentLocation = data && data.location;
     const forecastData = data.forecast && data.forecast.forecastday
