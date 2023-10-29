@@ -8,6 +8,7 @@ import { useState } from "react";
 const ForeCastCards = ({ forecastInfo = {}, key = [] }) => {
     const forecastDate = new Date(forecastInfo && forecastInfo.date);
     const dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    console.log(forecastInfo && forecastInfo)
     const [showGases, setShowGases] = useState(false);
     return (
         
@@ -15,7 +16,7 @@ const ForeCastCards = ({ forecastInfo = {}, key = [] }) => {
             <div className="forecastBox blur-background flex flex-wrap">
                 <div className="flex" id="box1">
                     <div >
-                        <h5 style={{ margin: "0" }}><main>{forecastDate.getDate()}.{forecastDate.getMonth()}.{forecastDate.getFullYear()}</main>{dayName[forecastDate.getDay()]}</h5>
+                        <h5 style={{ margin: "0" }}><main>{forecastDate.getDate()}.{forecastDate.getMonth()+1}.{forecastDate.getFullYear()}</main>{dayName[forecastDate.getDay()]}</h5>
                     </div>
                     <div id="forecastCondition" className="flex">
                         <img src={`http:${forecastInfo && forecastInfo.day.condition.icon}`} alt="condi" />
