@@ -8,7 +8,7 @@ import { useState } from "react";
 const ForeCastCards = ({ forecastInfo = {}, key = [] }) => {
     const forecastDate = new Date(forecastInfo && forecastInfo.date);
     const dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-    console.log(forecastInfo && forecastInfo)
+   
     const [showGases, setShowGases] = useState(false);
     return (
         
