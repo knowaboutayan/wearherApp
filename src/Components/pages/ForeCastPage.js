@@ -10,13 +10,8 @@ const ForeCastPage = () => {
  
     const data = useCurrentInfo(place, 6);
 
-<<<<<<< HEAD
-    const currentLocation =  data.location;
-    const forecastData = data.forecast&&data.forecast.forecastday
-=======
     const currentLocation = data && data.location;
     const forecastData = data.forecast && data.forecast.forecastday
->>>>>>> c2ef31960e7817c989ceb0180e6873389e697321
 
     if (data === "invalidSearch") {
      
