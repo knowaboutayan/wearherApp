@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 
-const useCurrentInfo = (placeName = "london", day = 1) => {
+const useCurrentInfo = (placeName = "", day = 1) => {
     const [currentData, setCurrentData] = useState([]);
 
     //     useEffect(() => {
