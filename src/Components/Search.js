@@ -32,8 +32,8 @@ const Search = () => {
 
     // Use an effect to handle changes in the transcript (speech recognition results)
     useEffect(() => {
-       
         // Dispatch an action to update the search state with the transcribed text
+
         dispatch(goSearch(transcript));
     }, [transcript, dispatch]);
 

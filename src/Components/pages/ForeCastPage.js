@@ -7,24 +7,23 @@ import useCurrentInfo from "../../Hook/useCurrentInfo";
 
 const ForeCastPage = () => {
     const place = useSelector(state => state.placename)
- 
     const data = useCurrentInfo(place, 6);
-
     const currentLocation = data && data.location;
     const forecastData = data.forecast && data.forecast.forecastday
 
     if (data === "invalidSearch") {
-     
+
         return <ApiErrorResponse />;
     } else if (data === 'err' || data.length === 0) {
-    
+
         return <ServerIssue />;
     }
     else {
-     
+
         // If data is valid, update local storage with the place name and render the content
+        const tempStr = localStorage.getItem('placename');
         localStorage.clear();
-        localStorage.setItem('placename', currentLocation && currentLocation.name);
+        localStorage.setItem('placename', currentLocation && currentLocation.name || tempStr);
         return (
 
             <div >
