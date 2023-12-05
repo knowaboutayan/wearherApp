@@ -46,7 +46,7 @@ return (
         <div className="navigation flex blur-background">
             {/* Define navigation links using React Router's NavLink */}
             <NavLink className="link" id="home" to="/"><i className="fa fa-home"></i> Home</NavLink>
-            <NavLink className="link" id="forecast" to="/Forecast"><i className="fa fa-sun"></i>Forecast</NavLink>
+            <NavLink className="link" id="forecast" to="/Forecast"><i className="fa fa-sun-bright"></i>Forecast</NavLink>
         </div>
         <div className="searchBox blur-background">
             <form onSubmit={(event) => { event.preventDefault() }}>
