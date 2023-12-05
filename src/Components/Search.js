@@ -58,7 +58,7 @@ return (
                     onChange={(e) => { SpeechRecognition.stopListening(); setSearch(String(e.target.value).toLowerCase()) }}
                     required
                 /> : <input
-                    placeholder="listening....👂"
+                    placeholder="listening...."
                     type="search"
                     value={(!isMicrophoneAvailable) ? ":(Access decline!" : transcript} disabled />}
                 {/* Buttons for controlling speech recognition and search */}
