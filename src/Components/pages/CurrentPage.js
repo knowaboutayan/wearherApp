@@ -34,8 +34,8 @@ const CurrentPage = () => {
             <div className='main flex flex-wrap'>
                 <div id="current_info" className="flex">
                     <div className='flex flex-wrap date_place'>
-                       <i class="fa fa-map-marker" aria-hidden="true"></i> <span>{placeAndDate && placeAndDate.name}, {placeAndDate && placeAndDate.region}</span>
-                    <i class="fa-thin fa-clock"></i>    <span>{placeAndDate && placeAndDate.localtime}</span>
+                       <i className="fa fa-map-marker" aria-hidden="true"></i> <span>{placeAndDate && placeAndDate.name}, {placeAndDate && placeAndDate.region}</span>
+                    <i className="fa fa-clock"></i>    <span>{placeAndDate && placeAndDate.localtime}</span>
                     </div>
                     <div id="temparature">
                         <h1 style={{ margin: "0" ,fontSize:"3em"}}>{!isNaN(currentInfo && currentInfo.temp_c) ? Math.round(currentInfo && currentInfo.temp_c) : <i className="fa fa-refresh" aria-hidden="true"></i>}<small><sup>o</sup>C</small></h1>
